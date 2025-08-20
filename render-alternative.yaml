@@ -1,0 +1,12 @@
+# Alternative render.yaml if the main one doesn't work
+services:
+  - type: web
+    name: aiconsult-hub
+    env: node
+    plan: free
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /

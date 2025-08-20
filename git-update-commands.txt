@@ -1,0 +1,22 @@
+# Git commands to update your GitHub repository
+
+# 1. Download your current repository
+git clone https://github.com/GANKIMA97/AIConsultHub_Latest.git
+cd AIConsultHub_Latest
+
+# 2. Copy the new files from this Replit project to your local folder:
+# - .nvmrc
+# - render.yaml (updated version)
+# - build.sh
+# - deployment-guide.md (updated version)
+# - Dockerfile
+# - .dockerignore
+
+# 3. Add and commit the changes
+git add .
+git commit -m "Fix deployment: Add Node.js 18 support and updated build commands"
+
+# 4. Push to GitHub
+git push origin main
+
+# After this, try deploying on Render again - it should work now!

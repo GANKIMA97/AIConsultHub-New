@@ -1,0 +1,1034 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Consult Hub - Comprehensive Solutions Across Technology, Business, and Global Trade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1e40af',
+                        'primary-teal': '#0f766e',
+                        'accent-blue': '#3b82f6',
+                        'accent-emerald': '#10b981',
+                        'accent-yellow': '#f59e0b',
+                        'charcoal': '#374151',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #0f766e 100%);
+        }
+        .glass-effect {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-inter bg-white">
+    <!-- @COMPONENT: Header -->
+    <header class="fixed top-0 w-full z-50 glass-effect border-b border-white/20" data-implementation="Sticky navigation with smooth scrolling">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-white">AI Consult Hub</h2>
+                        <p class="text-xs text-blue-200">Comprehensive Solutions</p>
+                    </div>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-accent-yellow transition-colors duration-300">Home</a>
+                    <a href="#services" class="text-white hover:text-accent-yellow transition-colors duration-300">Services</a>
+                    <a href="#about" class="text-white hover:text-accent-yellow transition-colors duration-300">About</a>
+                    <a href="#contact" class="text-white hover:text-accent-yellow transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <button class="bg-accent-yellow text-charcoal px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition-all duration-300 shadow-lg hover:shadow-xl" data-event="click:openConsultationModal">
+                    Get Free Consultation
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="min-h-screen flex items-center gradient-bg relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <!-- Modern technology consulting background -->
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" alt="Modern technology background" class="w-full h-full object-cover" data-mock-image="true" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary-blue/90 to-primary-teal/90"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 right-20 w-32 h-32 bg-accent-blue/20 rounded-full animate-float"></div>
+        <div class="absolute bottom-40 left-20 w-24 h-24 bg-accent-emerald/20 rounded-full animate-float" style="animation-delay: 1s;"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+                    Comprehensive Solutions Across
+                    <span class="text-accent-yellow">Technology</span>,
+                    <span class="text-accent-emerald">Business</span>, and
+                    <span class="text-accent-blue">Global Trade</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto animate-slide-up">
+                    Helping clients leverage technology, optimize business operations, and expand into global markets through expert consulting services.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                    <button class="bg-accent-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover-lift" data-event="click:scrollToServices">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Explore Services
+                    </button>
+                    <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary-blue transition-all duration-300 shadow-xl hover-lift" data-event="click:scrollToContact">
+                        <i class="fas fa-comments mr-2"></i>
+                        Contact Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Services Overview -->
+    <section id="services" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-charcoal mb-4">Our Comprehensive Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We provide end-to-end solutions across three core domains to accelerate your business growth</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- IT Consulting Services -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift border-t-4 border-accent-blue group">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-accent-blue to-primary-blue rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-code text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-3">IT Consulting Services</h3>
+                        <p class="text-gray-600">Cutting-edge technology solutions to drive digital transformation</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-blue mr-3"></i>
+                            Web & Mobile App Development
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-blue mr-3"></i>
+                            AI Tools Training & Integration
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-blue mr-3"></i>
+                            Cybersecurity & Cloud Computing
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-blue mr-3"></i>
+                            Data Analysis & Robotics
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-accent-blue text-white py-3 rounded-xl font-semibold hover:bg-blue-600 transition-colors duration-300" data-event="click:learnMoreIT">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- Business Consulting Services -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift border-t-4 border-accent-emerald group">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-accent-emerald to-primary-teal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-3">Business Consulting</h3>
+                        <p class="text-gray-600">Strategic business optimization and operational excellence</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-emerald mr-3"></i>
+                            Market Analysis & Strategy
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-emerald mr-3"></i>
+                            Digital Marketing & Support
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-emerald mr-3"></i>
+                            Finance & Accounting
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-emerald mr-3"></i>
+                            Project Management
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-accent-emerald text-white py-3 rounded-xl font-semibold hover:bg-emerald-600 transition-colors duration-300" data-event="click:learnMoreBusiness">
+                        Learn More
+                    </button>
+                </div>
+                
+                <!-- International Trade Services -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl hover-lift border-t-4 border-accent-yellow group">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-accent-yellow to-orange-500 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-globe text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-3">International Trade</h3>
+                        <p class="text-gray-600">Global market entry and cross-border business solutions</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-yellow mr-3"></i>
+                            Product Sourcing & Purchasing
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-yellow mr-3"></i>
+                            Chinese Factory Sales Support
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-yellow mr-3"></i>
+                            Market Entry Strategy
+                        </li>
+                        <li class="flex items-center text-sm text-gray-700">
+                            <i class="fas fa-check-circle text-accent-yellow mr-3"></i>
+                            Global Trade Facilitation
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-accent-yellow text-white py-3 rounded-xl font-semibold hover:bg-yellow-500 transition-colors duration-300" data-event="click:learnMoreTrade">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Overview -->
+
+    <!-- @COMPONENT: IT Consulting Detailed Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">IT Consulting Services</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Leveraging cutting-edge technology to transform your business operations</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- @MAP: itServices.map(service => ( -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 hover-lift border border-blue-100">
+                        <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-laptop-code text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Web & Mobile Development</h4>
+                        <p class="text-gray-600 text-sm">Custom applications built with modern frameworks and technologies</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 hover-lift border border-blue-100">
+                        <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-palette text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">UI/UX Design</h4>
+                        <p class="text-gray-600 text-sm">User-centered design solutions that enhance engagement and conversion</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 hover-lift border border-blue-100">
+                        <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-robot text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Chatbot Integration</h4>
+                        <p class="text-gray-600 text-sm">AI-powered conversational interfaces for customer support</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 hover-lift border border-blue-100">
+                        <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-brain text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">AI Tools Training</h4>
+                        <p class="text-gray-600 text-sm">Comprehensive training on AI technologies and implementation</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 hover-lift border border-blue-100">
+                        <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Cybersecurity</h4>
+                        <p class="text-gray-600 text-sm">Comprehensive security audits and protection strategies</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 hover-lift border border-blue-100">
+                        <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-cloud text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Cloud Computing</h4>
+                        <p class="text-gray-600 text-sm">Scalable cloud infrastructure and migration services</p>
+                    </div>
+                    <!-- @END_MAP )) -->
+                </div>
+                
+                <div class="text-center mt-12">
+                    <button class="bg-accent-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl" data-event="click:scheduleITConsultation">
+                        Schedule IT Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: IT Consulting Detailed Section -->
+
+    <!-- @COMPONENT: Business Consulting Detailed Section -->
+    <section class="py-20 bg-gradient-to-b from-emerald-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Business Consulting Services</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Strategic guidance to optimize operations and accelerate growth</p>
+                </div>
+                
+                <!-- Stats Section -->
+                <div class="grid md:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-accent-emerald mb-2" data-bind="stats.clientsServed">250+</div>
+                        <p class="text-gray-600">Clients Served</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-accent-emerald mb-2" data-bind="stats.projectsCompleted">500+</div>
+                        <p class="text-gray-600">Projects Completed</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-accent-emerald mb-2" data-bind="stats.successRate">98%</div>
+                        <p class="text-gray-600">Success Rate</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-accent-emerald mb-2" data-bind="stats.yearsExperience">10+</div>
+                        <p class="text-gray-600">Years Experience</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-lift border border-emerald-100">
+                        <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-chart-bar text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Market Analysis</h4>
+                        <p class="text-gray-600 text-sm">Deep market research and competitive analysis for strategic positioning</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-lift border border-emerald-100">
+                        <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-balance-scale text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Compliance Advisory</h4>
+                        <p class="text-gray-600 text-sm">Regulatory compliance and risk management strategies</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-lift border border-emerald-100">
+                        <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-bullhorn text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Digital Marketing</h4>
+                        <p class="text-gray-600 text-sm">Comprehensive digital marketing strategies and execution</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-lift border border-emerald-100">
+                        <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-calculator text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Bookkeeping</h4>
+                        <p class="text-gray-600 text-sm">Professional accounting and financial record management</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-lift border border-emerald-100">
+                        <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-language text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Translation Services</h4>
+                        <p class="text-gray-600 text-sm">Professional translation for Chinese-English business communications</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover-lift border border-emerald-100">
+                        <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-tasks text-white"></i>
+                        </div>
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Project Management</h4>
+                        <p class="text-gray-600 text-sm">End-to-end project planning, execution, and delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Business Consulting Detailed Section -->
+
+    <!-- @COMPONENT: International Trade Detailed Section -->
+    <section class="py-20 bg-charcoal text-white relative overflow-hidden">
+        <!-- Global connectivity background -->
+        <div class="absolute inset-0 opacity-5">
+            <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" alt="International shipping containers" class="w-full h-full object-cover" data-mock-image="true" />
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white mb-4">International Trade Services</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Bridging global markets with comprehensive trade solutions and China expertise</p>
+                </div>
+                
+                <!-- Global Map Visualization -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 mb-12">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-semibold mb-4">Global Reach & Connectivity</h3>
+                        <div class="grid md:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <i class="fas fa-shipping-fast text-4xl text-accent-yellow mb-4"></i>
+                                <h4 class="font-semibold mb-2">Product Sourcing</h4>
+                                <p class="text-sm text-gray-300">Direct connections with verified Chinese manufacturers</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-handshake text-4xl text-accent-yellow mb-4"></i>
+                                <h4 class="font-semibold mb-2">Proxy Purchasing</h4>
+                                <p class="text-sm text-gray-300">Complete procurement and quality assurance services</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-globe-asia text-4xl text-accent-yellow mb-4"></i>
+                                <h4 class="font-semibold mb-2">Market Entry</h4>
+                                <p class="text-sm text-gray-300">Strategic guidance for international expansion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Categories -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+                        <!-- Cars and vehicles imagery -->
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="Modern cars and vehicles" class="w-full h-32 object-cover rounded-lg mb-4" data-mock-image="true" />
+                        <h4 class="text-lg font-semibold mb-2">Cars & Vehicles</h4>
+                        <p class="text-gray-300 text-sm">Automotive sourcing and import facilitation</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+                        <!-- Home appliances imagery -->
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="Modern home appliances" class="w-full h-32 object-cover rounded-lg mb-4" data-mock-image="true" />
+                        <h4 class="text-lg font-semibold mb-2">Home Appliances</h4>
+                        <p class="text-gray-300 text-sm">Smart home and kitchen appliance sourcing</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+                        <!-- Furniture imagery -->
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="Modern furniture and interior design" class="w-full h-32 object-cover rounded-lg mb-4" data-mock-image="true" />
+                        <h4 class="text-lg font-semibold mb-2">Furniture</h4>
+                        <p class="text-gray-300 text-sm">Quality furniture and interior design products</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+                        <!-- Electronics imagery -->
+                        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="Modern electronics and devices" class="w-full h-32 object-cover rounded-lg mb-4" data-mock-image="true" />
+                        <h4 class="text-lg font-semibold mb-2">Electronics</h4>
+                        <p class="text-gray-300 text-sm">Consumer electronics and technology products</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+                        <!-- Fashion and clothing imagery -->
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="Fashion clothing and shoes display" class="w-full h-32 object-cover rounded-lg mb-4" data-mock-image="true" />
+                        <h4 class="text-lg font-semibold mb-2">Clothes & Shoes</h4>
+                        <p class="text-gray-300 text-sm">Fashion and apparel sourcing solutions</p>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 hover-lift">
+                        <!-- Industrial machinery imagery -->
+                        <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200" alt="Industrial machines and manufacturing equipment" class="w-full h-32 object-cover rounded-lg mb-4" data-mock-image="true" />
+                        <h4 class="text-lg font-semibold mb-2">Industrial Machines</h4>
+                        <p class="text-gray-300 text-sm">Manufacturing and industrial equipment sourcing</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <button class="bg-accent-yellow text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition-all duration-300 shadow-lg hover:shadow-xl" data-event="click:scheduleTradeConsultation">
+                        Start Global Trade Journey
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: International Trade Detailed Section -->
+
+    <!-- @COMPONENT: Why Choose Us Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Why Choose AI Consult Hub?</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We combine deep expertise with innovative solutions to deliver exceptional results</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent-blue to-primary-blue rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-award text-white text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-charcoal mb-3">Proven Expertise</h4>
+                        <p class="text-gray-600">10+ years of combined experience across technology, business, and international trade</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent-emerald to-primary-teal rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-charcoal mb-3">Client-Centric</h4>
+                        <p class="text-gray-600">Tailored solutions designed around your specific business needs and objectives</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-accent-yellow to-orange-500 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-globe text-white text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-charcoal mb-3">Global Network</h4>
+                        <p class="text-gray-600">Extensive connections in China and international markets for seamless operations</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-rocket text-white text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-charcoal mb-3">Innovation Focus</h4>
+                        <p class="text-gray-600">Cutting-edge solutions leveraging the latest technologies and methodologies</p>
+                    </div>
+                </div>
+                
+                <!-- Client Testimonials -->
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-center text-charcoal mb-8">What Our Clients Say</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-quote-left text-2xl text-accent-blue mb-4"></i>
+                                <p class="text-gray-600 italic">"AI Consult Hub transformed our digital presence and streamlined our operations. Exceptional service!"</p>
+                            </div>
+                            <div class="font-semibold text-charcoal" data-bind="testimonial.name">Sarah Johnson</div>
+                            <div class="text-sm text-gray-500" data-bind="testimonial.company">Tech Startup CEO</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-quote-left text-2xl text-accent-emerald mb-4"></i>
+                                <p class="text-gray-600 italic">"Their international trade expertise helped us establish successful partnerships in China."</p>
+                            </div>
+                            <div class="font-semibold text-charcoal" data-bind="testimonial.name">Michael Chen</div>
+                            <div class="text-sm text-gray-500" data-bind="testimonial.company">Import Business Owner</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <i class="fas fa-quote-left text-2xl text-accent-yellow mb-4"></i>
+                                <p class="text-gray-600 italic">"Professional, reliable, and results-driven. They exceeded our expectations in every aspect."</p>
+                            </div>
+                            <div class="font-semibold text-charcoal" data-bind="testimonial.name">Emma Rodriguez</div>
+                            <div class="text-sm text-gray-500" data-bind="testimonial.company">Marketing Director</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Why Choose Us Section -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-charcoal mb-6">About AI Consult Hub</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Founded on the principle of providing comprehensive solutions across technology, business, and international trade, AI Consult Hub has emerged as a trusted partner for businesses seeking growth and innovation.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Our mission is to help clients leverage technology, optimize business operations, and expand into global markets through expert consulting services. We bridge the gap between innovative technology solutions and practical business applications.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent-blue mr-4"></i>
+                                <span class="text-gray-700">Comprehensive multi-domain expertise</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent-emerald mr-4"></i>
+                                <span class="text-gray-700">Chinese and English language capabilities</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accent-yellow mr-4"></i>
+                                <span class="text-gray-700">Global market reach and local expertise</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-primary-teal mr-4"></i>
+                                <span class="text-gray-700">Cutting-edge technology solutions</span>
+                            </div>
+                        </div>
+                        
+                        <button class="bg-primary-blue text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl" data-event="click:learnMoreAbout">
+                            Learn More About Our Story
+                        </button>
+                    </div>
+                    
+                    <div>
+                        <!-- Professional business team image -->
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Professional business team collaborating" class="rounded-2xl shadow-2xl w-full h-auto" data-mock-image="true" />
+                    </div>
+                </div>
+                
+                <!-- Team Expertise Highlights -->
+                <div class="mt-20">
+                    <h3 class="text-3xl font-bold text-center text-charcoal mb-12">Our Global Expertise</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8">
+                            <i class="fas fa-map-marked-alt text-4xl text-accent-blue mb-4"></i>
+                            <h4 class="text-xl font-semibold text-charcoal mb-3">China Operations</h4>
+                            <p class="text-gray-600">Deep understanding of Chinese business culture, regulations, and market dynamics</p>
+                        </div>
+                        
+                        <div class="text-center bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-8">
+                            <i class="fas fa-globe-americas text-4xl text-accent-emerald mb-4"></i>
+                            <h4 class="text-xl font-semibold text-charcoal mb-3">International Markets</h4>
+                            <p class="text-gray-600">Extensive experience in global trade, regulations, and cross-cultural business</p>
+                        </div>
+                        
+                        <div class="text-center bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-8">
+                            <i class="fas fa-handshake text-4xl text-accent-yellow mb-4"></i>
+                            <h4 class="text-xl font-semibold text-charcoal mb-3">Bridge Solutions</h4>
+                            <p class="text-gray-600">Seamlessly connecting Chinese manufacturers with international buyers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="contact" class="py-20 gradient-bg relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <!-- Global business connectivity background -->
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" alt="Global business network connections" class="w-full h-full object-cover" data-mock-image="true" />
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white mb-4">Get Started Today</h2>
+                    <p class="text-xl text-blue-100 max-w-3xl mx-auto">Ready to transform your business? Contact us for a free consultation and discover how we can help you achieve your goals.</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                        <h3 class="text-2xl font-semibold text-white mb-6">Send Us a Message</h3>
+                        <form class="space-y-6" data-event="submit:handleContactForm">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-white text-sm font-medium mb-2">Full Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-accent-yellow focus:ring-2 focus:ring-accent-yellow/50" placeholder="Your Name" data-bind="form.name" data-mock="true">
+                                </div>
+                                <div>
+                                    <label class="block text-white text-sm font-medium mb-2">Email</label>
+                                    <input type="email" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-accent-yellow focus:ring-2 focus:ring-accent-yellow/50" placeholder="your@email.com" data-bind="form.email" data-mock="true">
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-white text-sm font-medium mb-2">Phone</label>
+                                    <input type="tel" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-accent-yellow focus:ring-2 focus:ring-accent-yellow/50" placeholder="+1 (555) 123-4567" data-bind="form.phone" data-mock="true">
+                                </div>
+                                <div>
+                                    <label class="block text-white text-sm font-medium mb-2">Service Interest</label>
+                                    <select class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:border-accent-yellow focus:ring-2 focus:ring-accent-yellow/50" data-bind="form.serviceInterest" data-mock="true">
+                                        <option value="">Select a service</option>
+                                        <option value="it-consulting">IT Consulting</option>
+                                        <option value="business-consulting">Business Consulting</option>
+                                        <option value="international-trade">International Trade</option>
+                                        <option value="multiple">Multiple Services</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-white text-sm font-medium mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-accent-yellow focus:ring-2 focus:ring-accent-yellow/50" placeholder="Tell us about your project or requirements..." data-bind="form.message" data-mock="true"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-accent-yellow text-charcoal py-4 rounded-lg font-semibold text-lg hover:bg-yellow-400 transition-all duration-300 shadow-lg hover:shadow-xl">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="space-y-8">
+                        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                            <h3 class="text-2xl font-semibold text-white mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Email</p>
+                                        <p class="text-blue-200" data-bind="contact.email">info@aiconsulthub.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-accent-emerald rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Phone</p>
+                                        <p class="text-blue-200" data-bind="contact.phone">+86 XXX XXXX XXXX</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-accent-yellow rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Locations</p>
+                                        <p class="text-blue-200" data-bind="contact.locations">China & International</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-clock text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-medium">Business Hours</p>
+                                        <p class="text-blue-200" data-bind="contact.hours">24/7 Support Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                            <h4 class="text-xl font-semibold text-white mb-4">Language Support</h4>
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-language text-accent-yellow mr-2"></i>
+                                    <span class="text-white">English</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-language text-accent-emerald mr-2"></i>
+                                    <span class="text-white">中文 (Chinese)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                            <h4 class="text-xl font-semibold text-white mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300" data-implementation="Social media links">
+                                    <i class="fab fa-linkedin text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300" data-implementation="Social media links">
+                                    <i class="fab fa-twitter text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-emerald rounded-lg flex items-center justify-center hover:bg-emerald-600 transition-colors duration-300" data-implementation="Social media links">
+                                    <i class="fab fa-wechat text-white"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-yellow rounded-lg flex items-center justify-center hover:bg-yellow-500 transition-colors duration-300" data-implementation="Social media links">
+                                    <i class="fab fa-whatsapp text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-600">Get answers to common questions about our consulting services</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">What industries do you serve?</h4>
+                        <p class="text-gray-600">We serve businesses across all industries, with particular expertise in technology, manufacturing, retail, and international trade sectors.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">How do you ensure quality in international trade services?</h4>
+                        <p class="text-gray-600">We maintain strict quality control processes, including supplier verification, product inspections, and comprehensive due diligence on all trade partners.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">What is your typical project timeline?</h4>
+                        <p class="text-gray-600">Project timelines vary based on scope and complexity. We provide detailed project plans during our initial consultation phase.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h4 class="text-lg font-semibold text-charcoal mb-2">Do you offer ongoing support after project completion?</h4>
+                        <p class="text-gray-600">Yes, we provide comprehensive post-project support including maintenance, training, and consultation services to ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQ Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-charcoal text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8 mb-12">
+                    <!-- Company Info -->
+                    <div class="md:col-span-2">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                                <i class="fas fa-brain text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">AI Consult Hub</h3>
+                                <p class="text-sm text-gray-400">Comprehensive Solutions</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-6 max-w-md">
+                            Empowering businesses through technology, strategic consulting, and global trade solutions. Your trusted partner for comprehensive growth strategies.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-accent-blue rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                                <i class="fab fa-linkedin text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-accent-blue rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                                <i class="fab fa-twitter text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-accent-emerald rounded-lg flex items-center justify-center hover:bg-emerald-600 transition-colors duration-300">
+                                <i class="fab fa-wechat text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-accent-yellow rounded-lg flex items-center justify-center hover:bg-yellow-500 transition-colors duration-300">
+                                <i class="fab fa-whatsapp text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Services</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-300 hover:text-accent-blue transition-colors duration-300">IT Consulting</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-accent-emerald transition-colors duration-300">Business Consulting</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-accent-yellow transition-colors duration-300">International Trade</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">AI Tools Training</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Digital Marketing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                            <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-700 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <p class="text-gray-400 text-sm mb-4 md:mb-0" data-bind="footer.copyright">
+                            © 2024 AI Consult Hub. All rights reserved.
+                        </p>
+                        <div class="flex items-center space-x-6 text-sm text-gray-400">
+                            <span>🌐 Multi-language Support</span>
+                            <span>🇨🇳 China Operations</span>
+                            <span>🌍 Global Reach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-accent-blue text-white rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 opacity-0 invisible hover:scale-110" data-event="click:scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Scroll to top functionality
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                    scrollToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                    scrollToTopBtn.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Animated counter for statistics
+            function animateCounters() {
+                const counters = document.querySelectorAll('[data-bind*="stats"]');
+                counters.forEach(counter => {
+                    const target = parseInt(counter.textContent.replace(/\D/g, ''));
+                    const increment = target / 100;
+                    let current = 0;
+                    
+                    const updateCounter = () => {
+                        if (current < target) {
+                            current += increment;
+                            counter.textContent = Math.ceil(current) + (counter.textContent.includes('%') ? '%' : '+');
+                            setTimeout(updateCounter, 20);
+                        } else {
+                            counter.textContent = counter.textContent; // Reset to original
+                        }
+                    };
+                    
+                    // Start animation when element is visible
+                    const observer = new IntersectionObserver((entries) => {
+                        if (entries[0].isIntersecting) {
+                            updateCounter();
+                            observer.unobserve(counter);
+                        }
+                    });
+                    observer.observe(counter);
+                });
+            }
+
+            // Intersection Observer for fade-in animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections for animations
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Initialize counter animations
+            animateCounters();
+
+            // Form submission handler (placeholder)
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form submission logic
+                    alert('Thank you for your message! We will get back to you soon.');
+                });
+            }
+
+            // Service card hover effects
+            document.querySelectorAll('.hover-lift').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
